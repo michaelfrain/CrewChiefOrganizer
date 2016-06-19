@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
-		D3C784971D15E70C00767980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784961D15E70C00767980 /* ViewController.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
 		D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7849B1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld */; };
 		D3C7849F1D15E70C00767980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C7849E1D15E70C00767980 /* Assets.xcassets */; };
 		D3C784A21D15E70C00767980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784A01D15E70C00767980 /* LaunchScreen.storyboard */; };
 		D3C784AD1D15E70C00767980 /* CrewChiefOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784AC1D15E70C00767980 /* CrewChiefOrganizerTests.swift */; };
 		D3C784B81D15E70C00767980 /* CrewChiefOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784B71D15E70C00767980 /* CrewChiefOrganizerUITests.swift */; };
+		D3C784CC1D15E8E100767980 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */; };
+		D3C784CD1D15E8E100767980 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */; };
+		D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */; };
+		D3C784CF1D15E8E100767980 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */; };
+		D3C784D21D15F01300767980 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D11D15F01300767980 /* MenuButton.swift */; };
+		D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D41D16EF4600767980 /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3C784961D15E70C00767980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3C784991D15E70C00767980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3C7849C1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrewChiefOrganizer.xcdatamodel; sourceTree = "<group>"; };
 		D3C7849E1D15E70C00767980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		D3C784B31D15E70C00767980 /* CrewChiefOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrewChiefOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784B71D15E70C00767980 /* CrewChiefOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewChiefOrganizerUITests.swift; sourceTree = "<group>"; };
 		D3C784B91D15E70C00767980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/emplate/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/emplate/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/emplate/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/emplate/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3C784D11D15F01300767980 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuButton.swift; path = Views/ewSwift/MenuButton.swift; sourceTree = "<group>"; };
+		D3C784D41D16EF4600767980 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controllers/erSwift/MainMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +109,10 @@
 		D3C784931D15E70C00767980 /* CrewChiefOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				D3C784D31D16EF0100767980 /* Controllers */,
+				D3C784D01D15EFE700767980 /* Views */,
+				D3C784C51D15E8CC00767980 /* Models */,
 				D3C784941D15E70C00767980 /* AppDelegate.swift */,
-				D3C784961D15E70C00767980 /* ViewController.swift */,
 				D3C784981D15E70C00767980 /* Main.storyboard */,
 				D3C7849E1D15E70C00767980 /* Assets.xcassets */,
 				D3C784A01D15E70C00767980 /* LaunchScreen.storyboard */,
@@ -126,6 +138,33 @@
 				D3C784B91D15E70C00767980 /* Info.plist */,
 			);
 			path = CrewChiefOrganizerUITests;
+			sourceTree = "<group>";
+		};
+		D3C784C51D15E8CC00767980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */,
+				D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */,
+				D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */,
+				D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D3C784D01D15EFE700767980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3C784D11D15F01300767980 /* MenuButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D3C784D31D16EF0100767980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3C784D41D16EF4600767980 /* MainMenuViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +235,8 @@
 				TargetAttributes = {
 					D3C784901D15E70C00767980 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KJG9839E7Y;
+						DevelopmentTeamName = "Michael Frain (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
 					D3C784A71D15E70C00767980 = {
@@ -262,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */,
 				D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */,
-				D3C784971D15E70C00767980 /* ViewController.swift in Sources */,
+				D3C784CC1D15E8E100767980 /* Game+CoreDataClass.swift in Sources */,
+				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
+				D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */,
+				D3C784CF1D15E8E100767980 /* Penalty+CoreDataProperties.swift in Sources */,
+				D3C784CD1D15E8E100767980 /* Game+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
