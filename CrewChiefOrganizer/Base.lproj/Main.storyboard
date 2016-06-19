@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="0OS-mu-3yA">
             <objects>
-                <viewController id="KFX-M0-vfi" sceneMemberID="viewController">
+                <viewController id="KFX-M0-vfi" customClass="MainMenuViewController" customModule="CrewChiefOrganizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="afg-yx-gnX"/>
                         <viewControllerLayoutGuide type="bottom" id="jmO-xU-sSk"/>
@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NCAA Football Crew Chief Organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-kK-OGg">
-                                <frame key="frameInset" minX="244" minY="20" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCAA Football Crew Chief Organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-kK-OGg">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-iU-e1r" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
-                                <frame key="frameInset" minX="304" minY="83" width="160" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="This is a title">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-iU-e1r" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="1OJ-qV-eos"/>
+                                    <constraint firstAttribute="width" constant="160" id="7Hi-1C-AQK"/>
+                                </constraints>
+                                <state key="normal" title="Create New Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -42,14 +42,41 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="PKO-MK-vvO" kind="show" id="Hpy-Et-zE4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q2z-kK-OGg" firstAttribute="centerX" secondItem="7mX-QW-noS" secondAttribute="centerX" id="JpC-Mo-trJ"/>
+                            <constraint firstItem="q2z-kK-OGg" firstAttribute="top" secondItem="afg-yx-gnX" secondAttribute="bottom" id="V1t-94-Cj0"/>
+                            <constraint firstItem="C0w-iU-e1r" firstAttribute="top" secondItem="q2z-kK-OGg" secondAttribute="bottom" constant="42" id="qRb-9a-TLr"/>
+                            <constraint firstItem="C0w-iU-e1r" firstAttribute="centerX" secondItem="q2z-kK-OGg" secondAttribute="centerX" id="qWk-nj-B6G"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgS-Rw-5XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-680" y="-160"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fgQ-rM-COJ">
+            <objects>
+                <viewController id="PKO-MK-vvO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1nf-7t-Jg8"/>
+                        <viewControllerLayoutGuide type="bottom" id="y4B-pR-PLJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qD6-3t-8mc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvf-JC-r87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="-161"/>
         </scene>
     </scenes>
 </document>
