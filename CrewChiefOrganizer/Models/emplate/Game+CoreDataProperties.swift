@@ -22,7 +22,7 @@ extension Game {
     @NSManaged var awayTeam: String?
     @NSManaged var homeScore: Int16
     @NSManaged var awayScore: Int16
-    @NSManaged var officials: NSObject?
+    @NSManaged var officials: [String]?
     @NSManaged var hasOvertime: Bool
     @NSManaged var numberOfOvertimes: Int16
     @NSManaged var hasTelevision: Bool

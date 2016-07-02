@@ -22,6 +22,7 @@
 		D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D41D16EF4600767980 /* MainMenuViewController.swift */; };
 		D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D61D173A2E00767980 /* GameSetupViewController.swift */; };
 		D3C784D91D173D9800767980 /* SetupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D81D173D9800767980 /* SetupTextField.swift */; };
+		D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D3C784D41D16EF4600767980 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controllers/erSwift/MainMenuViewController.swift; sourceTree = "<group>"; };
 		D3C784D61D173A2E00767980 /* GameSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameSetupViewController.swift; path = Controllers/erSwift/GameSetupViewController.swift; sourceTree = "<group>"; };
 		D3C784D81D173D9800767980 /* SetupTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupTextField.swift; path = Views/ewSwift/SetupTextField.swift; sourceTree = "<group>"; };
+		D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerViewController.swift; path = Controllers/DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				D3C784D61D173A2E00767980 /* GameSetupViewController.swift */,
 				D3C784D41D16EF4600767980 /* MainMenuViewController.swift */,
+				D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */,
 				D3C784CC1D15E8E100767980 /* Game+CoreDataClass.swift in Sources */,
 				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
+				D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */,
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
 				D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */,
@@ -555,6 +559,7 @@
 				D3C784BE1D15E70C00767980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C784BF1D15E70C00767980 /* Build configuration list for PBXNativeTarget "CrewChiefOrganizerTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +568,7 @@
 				D3C784C11D15E70C00767980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C784C21D15E70C00767980 /* Build configuration list for PBXNativeTarget "CrewChiefOrganizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +577,7 @@
 				D3C784C41D15E70C00767980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

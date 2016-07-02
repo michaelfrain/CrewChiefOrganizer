@@ -11,6 +11,18 @@ import UIKit
 class GameSetupViewController: UIViewController {
     @IBOutlet var topConstraint: NSLayoutConstraint!
     @IBOutlet var txtGameDate: SetupTextField!
+    @IBOutlet var txtHomeTeam: SetupTextField!
+    @IBOutlet var txtAwayTeam: SetupTextField!
+    @IBOutlet var txtReferee: SetupTextField!
+    @IBOutlet var txtUmpire: SetupTextField!
+    @IBOutlet var txtLinesman: SetupTextField!
+    @IBOutlet var txtLineJudge: SetupTextField!
+    @IBOutlet var txtFieldJudge: SetupTextField!
+    @IBOutlet var txtSideJudge: SetupTextField!
+    @IBOutlet var txtBackJudge: SetupTextField!
+    @IBOutlet var txtCenterJudge: SetupTextField!
+    
+    var gameDate: Date?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +35,42 @@ class GameSetupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "StartGameSegue" {
+            let newGame = Game.createGameInMainContext()
+            newGame.startDate = gameDate
+            newGame.homeTeam = txtHomeTeam.text!
+            newGame.awayTeam = txtAwayTeam.text!
+            newGame.officials = [txtReferee.text!,
+                                 txtUmpire.text!,
+                                 txtLinesman.text!,
+                                 txtLineJudge.text!,
+                                 txtFieldJudge.text!,
+                                 txtSideJudge.text!,
+                                 txtBackJudge.text!,
+                                 txtCenterJudge.text!]
+            do {
+                let delegate = UIApplication.shared().delegate as! AppDelegate
+                let moc = delegate.persistentContainer.viewContext
+                try moc.save()
+            } catch {
+                // TODO: Handle a failed save
+            }
+        }
     }
-    */
-
+    
+    @IBAction func unwindToGameSetupViewController(sender: UIStoryboardSegue) {
+        if sender.identifier == "UnwindFromDatePickerSegue" {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .mediumStyle
+            dateFormatter.timeStyle = .shortStyle
+            let formattedDate = dateFormatter.string(from: gameDate!)
+            txtGameDate.text = formattedDate
+        }
+    }
 }
 
 extension GameSetupViewController: UITextFieldDelegate {
