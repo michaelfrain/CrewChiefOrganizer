@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jmO-xU-sSk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7mX-QW-noS">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCAA Football Crew Chief Organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-kK-OGg">
@@ -70,20 +70,18 @@
                         <viewControllerLayoutGuide type="bottom" id="zsr-j3-6Vg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tyN-7P-Efg">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="240"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jgm-k5-xLQ">
-                                <date key="date" timeIntervalSinceReferenceDate="488067940.43607903">
-                                    <!--2016-06-19 22:25:40 +0000-->
-                                </date>
-                            </datePicker>
-                            <navigationBar contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="wfN-RB-93h">
+                            <navigationBar contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="wfN-RB-93h">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="9uF-Vu-mAO"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Game Date" id="0hc-J7-P4n">
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="n0g-3n-WXy">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rNL-lo-n0g">
-                                                <rect key="frame" x="249" y="7" width="75" height="30"/>
+                                                <rect key="frame" x="209" y="27" width="75" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <state key="normal" title="Done">
@@ -97,20 +95,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jgm-k5-xLQ">
+                                <date key="date" timeIntervalSinceReferenceDate="488067940.43607903">
+                                    <!--2016-06-19 22:25:40 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jgm-k5-xLQ" firstAttribute="leading" secondItem="tyN-7P-Efg" secondAttribute="leadingMargin" constant="-16" id="4nm-A9-8dz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jgm-k5-xLQ" secondAttribute="trailing" constant="-16" id="Ew4-Af-Li0"/>
-                            <constraint firstItem="wfN-RB-93h" firstAttribute="top" secondItem="3tW-bk-occ" secondAttribute="bottom" constant="-20" id="Wld-R7-MKl"/>
-                            <constraint firstItem="Jgm-k5-xLQ" firstAttribute="top" secondItem="wfN-RB-93h" secondAttribute="bottom" id="fSX-uN-Fkd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wfN-RB-93h" secondAttribute="trailing" constant="-16" id="hLT-kc-hVR"/>
-                            <constraint firstItem="wfN-RB-93h" firstAttribute="leading" secondItem="tyN-7P-Efg" secondAttribute="leadingMargin" constant="-16" id="tu0-Sd-BkB"/>
-                            <constraint firstItem="zsr-j3-6Vg" firstAttribute="top" secondItem="Jgm-k5-xLQ" secondAttribute="bottom" id="wuW-yO-TNJ"/>
+                            <constraint firstItem="zsr-j3-6Vg" firstAttribute="top" secondItem="Jgm-k5-xLQ" secondAttribute="bottom" id="ApB-83-dOV"/>
+                            <constraint firstItem="Jgm-k5-xLQ" firstAttribute="leading" secondItem="tyN-7P-Efg" secondAttribute="leading" id="Ohz-Pi-5uM"/>
+                            <constraint firstAttribute="trailing" secondItem="Jgm-k5-xLQ" secondAttribute="trailing" id="QsM-M1-UGU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wfN-RB-93h" secondAttribute="trailing" constant="-16" id="RZs-f0-X8l"/>
+                            <constraint firstItem="wfN-RB-93h" firstAttribute="top" secondItem="3tW-bk-occ" secondAttribute="bottom" constant="-20" id="acR-Ob-BP4"/>
+                            <constraint firstItem="Jgm-k5-xLQ" firstAttribute="top" secondItem="wfN-RB-93h" secondAttribute="bottom" id="u7m-le-zHr"/>
+                            <constraint firstItem="wfN-RB-93h" firstAttribute="leading" secondItem="tyN-7P-Efg" secondAttribute="leadingMargin" constant="-16" id="z8m-H4-ofo"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="340" height="240"/>
+                    <size key="freeformSize" width="300" height="300"/>
                     <connections>
                         <outlet property="datePicker" destination="Jgm-k5-xLQ" id="EGj-bM-qOG"/>
                     </connections>
@@ -118,7 +121,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vp2-mo-nj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zg4-Nr-Iqz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="57.600000000000001" y="-644.97751124437787"/>
+            <point key="canvasLocation" x="57.421874999999993" y="-645.3125"/>
         </scene>
         <!--Game Setup View Controller-->
         <scene sceneID="fgQ-rM-COJ">
@@ -129,7 +132,7 @@
                         <viewControllerLayoutGuide type="bottom" id="y4B-pR-PLJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qD6-3t-8mc">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Game Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz2-rQ-6mb">
@@ -440,7 +443,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kfZ-QI-vs6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="phB-dl-3b6">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

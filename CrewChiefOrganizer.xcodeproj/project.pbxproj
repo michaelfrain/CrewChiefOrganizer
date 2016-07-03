@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */; };
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
 		D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7849B1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PenaltyEntryViewController.swift; path = Controllers/erSwift/PenaltyEntryViewController.swift; sourceTree = "<group>"; };
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C784991D15E70C00767980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		D3C784D31D16EF0100767980 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */,
 				D3C784D61D173A2E00767980 /* GameSetupViewController.swift */,
 				D3C784D41D16EF4600767980 /* MainMenuViewController.swift */,
 				D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */,
@@ -318,6 +321,7 @@
 				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
 				D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */,
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
+				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
 				D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */,
 				D3C784CF1D15E8E100767980 /* Penalty+CoreDataProperties.swift in Sources */,
