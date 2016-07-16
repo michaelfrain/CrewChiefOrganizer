@@ -56,6 +56,9 @@ class GameSetupViewController: UIViewController {
                 let delegate = UIApplication.shared().delegate as! AppDelegate
                 let moc = delegate.persistentContainer.viewContext
                 try moc.save()
+                
+                let destination = segue.destinationViewController as! PenaltyEntryViewController
+                destination.currentGame = newGame
             } catch {
                 // TODO: Handle a failed save
             }
@@ -65,8 +68,8 @@ class GameSetupViewController: UIViewController {
     @IBAction func unwindToGameSetupViewController(sender: UIStoryboardSegue) {
         if sender.identifier == "UnwindFromDatePickerSegue" {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .mediumStyle
-            dateFormatter.timeStyle = .shortStyle
+            dateFormatter.dateStyle = .medium
+            dateFormatter.timeStyle = .short
             let formattedDate = dateFormatter.string(from: gameDate!)
             txtGameDate.text = formattedDate
         }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -79,11 +79,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Game Date" id="0hc-J7-P4n">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="n0g-3n-WXy">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="n0g-3n-WXy">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rNL-lo-n0g">
                                                 <rect key="frame" x="209" y="27" width="75" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Done">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -367,34 +367,30 @@
                                     <outlet property="delegate" destination="PKO-MK-vvO" id="IsL-AW-Eo9"/>
                                 </connections>
                             </textField>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INb-cm-9ON">
-                                <items>
-                                    <barButtonItem style="plain" id="mRT-kf-BYn">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eCI-gY-9xA">
-                                            <rect key="frame" x="20" y="7" width="115" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Start Game">
-                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="qxs-RT-F9K" kind="show" identifier="StartGameSegue" id="lKt-zk-7lN"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlx-vT-FgE">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wvn-v1-KUK"/>
+                                </constraints>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qxs-RT-F9K" kind="show" identifier="StartGameSegue" id="Er5-lM-SGK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="z4X-AM-2hs" firstAttribute="trailing" secondItem="Izf-s4-lb1" secondAttribute="trailing" id="5IT-bn-FmV"/>
-                            <constraint firstItem="INb-cm-9ON" firstAttribute="leading" secondItem="qD6-3t-8mc" secondAttribute="leadingMargin" constant="-16" id="6lg-IX-zjU"/>
                             <constraint firstItem="Wva-UX-jN6" firstAttribute="top" secondItem="Qz2-rQ-6mb" secondAttribute="bottom" constant="15" id="9e6-dF-Nu1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="INb-cm-9ON" secondAttribute="trailing" constant="-16" id="E3P-2W-IAG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hlx-vT-FgE" secondAttribute="trailing" constant="-20" id="BhA-3V-IX6"/>
+                            <constraint firstItem="hlx-vT-FgE" firstAttribute="leading" secondItem="qD6-3t-8mc" secondAttribute="leadingMargin" constant="-20" id="GsI-qh-h0y"/>
                             <constraint firstItem="z4X-AM-2hs" firstAttribute="width" secondItem="Izf-s4-lb1" secondAttribute="width" id="KTl-Jd-V4n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Izf-s4-lb1" secondAttribute="trailing" id="MIV-wg-3vs"/>
                             <constraint firstItem="Wva-UX-jN6" firstAttribute="centerX" secondItem="Qz2-rQ-6mb" secondAttribute="centerX" id="RwH-qe-TQS"/>
                             <constraint firstItem="Izf-s4-lb1" firstAttribute="top" secondItem="Wva-UX-jN6" secondAttribute="bottom" constant="18" id="Uhu-SK-5Wo"/>
-                            <constraint firstItem="y4B-pR-PLJ" firstAttribute="top" secondItem="INb-cm-9ON" secondAttribute="bottom" id="Umv-Ds-vfY"/>
+                            <constraint firstItem="y4B-pR-PLJ" firstAttribute="top" secondItem="hlx-vT-FgE" secondAttribute="bottom" id="YHV-LN-wo2"/>
                             <constraint firstItem="z4X-AM-2hs" firstAttribute="height" secondItem="vAz-oL-HR9" secondAttribute="height" id="Zbo-0C-GbA"/>
                             <constraint firstItem="vAz-oL-HR9" firstAttribute="top" secondItem="bXa-y1-hyh" secondAttribute="bottom" constant="45" id="b7u-f8-zha">
                                 <variation key="heightClass=compact-widthClass=compact" constant="15"/>
@@ -432,12 +428,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvf-JC-r87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.8125" y="-161.71875"/>
+            <point key="canvasLocation" x="57.421874999999993" y="-161.71875"/>
         </scene>
-        <!--View Controller-->
+        <!--Penalty Entry View Controller-->
         <scene sceneID="cl5-L6-dGV">
             <objects>
-                <viewController id="qxs-RT-F9K" sceneMemberID="viewController">
+                <viewController id="qxs-RT-F9K" customClass="PenaltyEntryViewController" customModule="CrewChiefOrganizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Rm-3S-h9A"/>
                         <viewControllerLayoutGuide type="bottom" id="kfZ-QI-vs6"/>
@@ -445,12 +441,150 @@
                     <view key="view" contentMode="scaleToFill" id="phB-dl-3b6">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-u0-81F">
+                                <frame key="frameInset" minX="557" minY="47" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="OT"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quarter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAO-2q-8Jw">
+                                <frame key="frameInset" minX="20" minY="51" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-9R-KTR">
+                                <frame key="frameInset" minX="20" minY="141" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQL-nV-ZAx">
+                                <frame key="frameInset" minX="398" minY="93" height="116" maxX="20"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qxs-RT-F9K" id="ijf-JR-lLF"/>
+                                    <outlet property="delegate" destination="qxs-RT-F9K" id="gqw-C5-kYt"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65U-c2-RsW">
+                                <frame key="frameInset" minX="20" minY="239" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-xQ-tb4">
+                                <frame key="frameInset" minX="557" minY="235" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Visitor"/>
+                                </segments>
+                            </segmentedControl>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-v1-kmk">
+                                <frame key="frameInset" minX="398" minY="303" height="116" maxX="20"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qxs-RT-F9K" id="YJ6-8H-tq7"/>
+                                    <outlet property="delegate" destination="qxs-RT-F9K" id="uEg-t0-7tp"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phn-GQ-Cec">
+                                <frame key="frameInset" minX="20" minY="351" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Side of ball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvq-63-Qgh">
+                                <frame key="frameInset" minX="20" minY="450" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GTD-SE-imq">
+                                <frame key="frameInset" minX="557" minY="447" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Off"/>
+                                    <segment title="Def"/>
+                                    <segment title="Rcv"/>
+                                    <segment title="Kick"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-X7-MzL">
+                                <frame key="frameInset" minX="20" minY="549" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="equ-Pv-o7e">
+                                <frame key="frameInset" minX="398" minY="501" height="116" maxX="20"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qxs-RT-F9K" id="dmT-aY-obd"/>
+                                    <outlet property="delegate" destination="qxs-RT-F9K" id="cpp-cL-ODT"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Penalty result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-tn-viK">
+                                <frame key="frameInset" minX="20" minY="642" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-Ux-ceI">
+                                <frame key="frameInset" minX="557" minY="638" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Accept"/>
+                                    <segment title="Decline"/>
+                                    <segment title="Offset"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calling official" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn8-nF-Ine">
+                                <frame key="frameInset" minX="20" minY="703" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5fR-vs-Jpz">
+                                <frame key="frameInset" minX="557" minY="699" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="R"/>
+                                    <segment title="U"/>
+                                    <segment title="H"/>
+                                    <segment title="L"/>
+                                    <segment title="S"/>
+                                    <segment title="F"/>
+                                    <segment title="B"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="pkrFoul" destination="tOe-v1-kmk" id="BIr-Og-0eo"/>
+                        <outlet property="pkrNumber" destination="equ-Pv-o7e" id="eLU-D6-iYJ"/>
+                        <outlet property="pkrTime" destination="DQL-nV-ZAx" id="9CV-0e-JMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQ8-od-pL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="-162"/>
+            <point key="canvasLocation" x="745.3125" y="-162.3046875"/>
         </scene>
     </scenes>
 </document>

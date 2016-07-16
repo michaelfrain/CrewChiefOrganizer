@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D362159D1D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */; };
+		D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */; };
+		D362159F1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */; };
+		D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */; };
+		D36215A11D3AFE7F00418B41 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */; };
 		D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */; };
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
@@ -15,10 +20,6 @@
 		D3C784A21D15E70C00767980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784A01D15E70C00767980 /* LaunchScreen.storyboard */; };
 		D3C784AD1D15E70C00767980 /* CrewChiefOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784AC1D15E70C00767980 /* CrewChiefOrganizerTests.swift */; };
 		D3C784B81D15E70C00767980 /* CrewChiefOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784B71D15E70C00767980 /* CrewChiefOrganizerUITests.swift */; };
-		D3C784CC1D15E8E100767980 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */; };
-		D3C784CD1D15E8E100767980 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */; };
-		D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */; };
-		D3C784CF1D15E8E100767980 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */; };
 		D3C784D21D15F01300767980 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D11D15F01300767980 /* MenuButton.swift */; };
 		D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D41D16EF4600767980 /* MainMenuViewController.swift */; };
 		D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784D61D173A2E00767980 /* GameSetupViewController.swift */; };
@@ -44,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; path = "Models/___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; sourceTree = "<group>"; };
+		D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PenaltyEntryViewController.swift; path = Controllers/erSwift/PenaltyEntryViewController.swift; sourceTree = "<group>"; };
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +64,6 @@
 		D3C784B31D15E70C00767980 /* CrewChiefOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrewChiefOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784B71D15E70C00767980 /* CrewChiefOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewChiefOrganizerUITests.swift; sourceTree = "<group>"; };
 		D3C784B91D15E70C00767980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/emplate/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/emplate/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/emplate/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/emplate/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D3C784D11D15F01300767980 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuButton.swift; path = Views/ewSwift/MenuButton.swift; sourceTree = "<group>"; };
 		D3C784D41D16EF4600767980 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controllers/erSwift/MainMenuViewController.swift; sourceTree = "<group>"; };
 		D3C784D61D173A2E00767980 /* GameSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameSetupViewController.swift; path = Controllers/erSwift/GameSetupViewController.swift; sourceTree = "<group>"; };
@@ -151,10 +153,11 @@
 		D3C784C51D15E8CC00767980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D3C784C71D15E8E100767980 /* Game+CoreDataClass.swift */,
-				D3C784C81D15E8E100767980 /* Game+CoreDataProperties.swift */,
-				D3C784C91D15E8E100767980 /* Penalty+CoreDataClass.swift */,
-				D3C784CA1D15E8E100767980 /* Penalty+CoreDataProperties.swift */,
+				D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */,
+				D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */,
+				D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */,
+				D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */,
+				D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -316,17 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */,
+				D36215A11D3AFE7F00418B41 /* Game+CoreDataProperties.swift in Sources */,
 				D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */,
-				D3C784CC1D15E8E100767980 /* Game+CoreDataClass.swift in Sources */,
 				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
+				D362159F1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift in Sources */,
 				D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */,
+				D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */,
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
 				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
+				D362159D1D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
-				D3C784CE1D15E8E100767980 /* Penalty+CoreDataClass.swift in Sources */,
-				D3C784CF1D15E8E100767980 /* Penalty+CoreDataProperties.swift in Sources */,
-				D3C784CD1D15E8E100767980 /* Game+CoreDataProperties.swift in Sources */,
 				D3C784D91D173D9800767980 /* SetupTextField.swift in Sources */,
+				D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
