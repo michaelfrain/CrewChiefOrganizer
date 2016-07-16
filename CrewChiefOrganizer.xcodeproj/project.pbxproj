@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D362159D1D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */; };
 		D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */; };
 		D362159F1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */; };
 		D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */; };
@@ -45,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; path = "Models/___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; sourceTree = "<group>"; };
 		D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		D3C784C51D15E8CC00767980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D36215981D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */,
 				D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */,
 				D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */,
 				D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */,
@@ -327,7 +324,6 @@
 				D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */,
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
 				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
-				D362159D1D3AFE7F00418B41 /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
 				D3C784D91D173D9800767980 /* SetupTextField.swift in Sources */,
 				D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */,
