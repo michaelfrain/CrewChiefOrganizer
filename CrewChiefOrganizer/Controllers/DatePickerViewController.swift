@@ -25,7 +25,7 @@ class DatePickerViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "UnwindFromDatePickerSegue" {
-            let gameSetupController = segue.destinationViewController as! GameSetupViewController
+            let gameSetupController = segue.destination as! GameSetupViewController
             gameSetupController.gameDate = datePicker.date
         }
     }

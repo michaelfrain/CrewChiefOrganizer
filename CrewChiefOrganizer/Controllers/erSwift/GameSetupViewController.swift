@@ -39,12 +39,12 @@ class GameSetupViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "StartGameSegue" {
+        if segue.identifier == "MainGameSegue" {
             let newGame = Game.createGameInMainContext()
             newGame.startDate = gameDate
             newGame.homeTeam = txtHomeTeam.text!
             newGame.awayTeam = txtAwayTeam.text!
-            newGame.officials = [txtReferee.text!,
+            let officials = [txtReferee.text!,
                                  txtUmpire.text!,
                                  txtLinesman.text!,
                                  txtLineJudge.text!,
@@ -52,12 +52,14 @@ class GameSetupViewController: UIViewController {
                                  txtSideJudge.text!,
                                  txtBackJudge.text!,
                                  txtCenterJudge.text!]
+            newGame.officials = NSKeyedArchiver.archivedData(withRootObject: officials)
+            
             do {
-                let delegate = UIApplication.shared().delegate as! AppDelegate
+                let delegate = UIApplication.shared.delegate as! AppDelegate
                 let moc = delegate.persistentContainer.viewContext
                 try moc.save()
                 
-                let destination = segue.destinationViewController as! PenaltyEntryViewController
+                let destination = segue.destination as! MainEntryViewController
                 destination.currentGame = newGame
             } catch {
                 // TODO: Handle a failed save

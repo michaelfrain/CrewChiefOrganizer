@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */; };
-		D362159F1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */; };
-		D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */; };
-		D36215A11D3AFE7F00418B41 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */; };
 		D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */; };
+		D395FCB91D581828000EB384 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB51D581828000EB384 /* Game+CoreDataClass.swift */; };
+		D395FCBA1D581828000EB384 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB61D581828000EB384 /* Game+CoreDataProperties.swift */; };
+		D395FCBB1D581828000EB384 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB71D581828000EB384 /* Penalty+CoreDataClass.swift */; };
+		D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */; };
+		D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */; };
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
 		D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7849B1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld */; };
@@ -44,11 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PenaltyEntryViewController.swift; path = Controllers/erSwift/PenaltyEntryViewController.swift; sourceTree = "<group>"; };
+		D395FCB51D581828000EB384 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D395FCB61D581828000EB384 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D395FCB71D581828000EB384 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainEntryViewController.swift; path = Controllers/MainEntryViewController.swift; sourceTree = "<group>"; };
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C784991D15E70C00767980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,10 +153,10 @@
 		D3C784C51D15E8CC00767980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D36215991D3AFE7F00418B41 /* Penalty+CoreDataClass.swift */,
-				D362159A1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift */,
-				D362159B1D3AFE7F00418B41 /* Game+CoreDataClass.swift */,
-				D362159C1D3AFE7F00418B41 /* Game+CoreDataProperties.swift */,
+				D395FCB51D581828000EB384 /* Game+CoreDataClass.swift */,
+				D395FCB61D581828000EB384 /* Game+CoreDataProperties.swift */,
+				D395FCB71D581828000EB384 /* Penalty+CoreDataClass.swift */,
+				D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,6 +177,7 @@
 				D3C784D61D173A2E00767980 /* GameSetupViewController.swift */,
 				D3C784D41D16EF4600767980 /* MainMenuViewController.swift */,
 				D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */,
+				D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -316,17 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */,
-				D36215A11D3AFE7F00418B41 /* Game+CoreDataProperties.swift in Sources */,
 				D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */,
 				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
-				D362159F1D3AFE7F00418B41 /* Penalty+CoreDataProperties.swift in Sources */,
+				D395FCBB1D581828000EB384 /* Penalty+CoreDataClass.swift in Sources */,
 				D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */,
-				D36215A01D3AFE7F00418B41 /* Game+CoreDataClass.swift in Sources */,
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
+				D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */,
+				D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */,
 				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
 				D3C784D91D173D9800767980 /* SetupTextField.swift in Sources */,
-				D362159E1D3AFE7F00418B41 /* Penalty+CoreDataClass.swift in Sources */,
+				D395FCB91D581828000EB384 /* Game+CoreDataClass.swift in Sources */,
+				D395FCBA1D581828000EB384 /* Game+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
