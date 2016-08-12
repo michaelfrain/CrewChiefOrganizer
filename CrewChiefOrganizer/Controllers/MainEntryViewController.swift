@@ -41,6 +41,14 @@ class MainEntryViewController: UIViewController {
             let destination = segue.destination as! PenaltyEntryViewController
             destination.currentGame = currentGame
         }
+        
+        if segue.identifier == "ExitAndSaveSegue" {
+            do {
+                try currentGame.managedObjectContext?.save()
+            } catch {
+                // TODO: Handle a failed save
+            }
+        }
     }
     
     @IBAction func unwindToMainEntryViewController(sender: UIStoryboardSegue) {
