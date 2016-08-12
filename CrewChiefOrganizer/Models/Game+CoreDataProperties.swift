@@ -18,14 +18,14 @@ extension Game {
     @NSManaged public var awayScore: Int16
     @NSManaged public var awayTeam: String?
     @NSManaged public var conference: String?
-    @NSManaged public var endDate: NSDate?
+    @NSManaged public var endDate: Date?
     @NSManaged public var hasOvertime: Bool
     @NSManaged public var hasTelevision: Bool
     @NSManaged public var homeScore: Int16
     @NSManaged public var homeTeam: String?
     @NSManaged public var overtimes: Int16
     @NSManaged public var officials: NSData?
-    @NSManaged public var startDate: NSDate?
+    @NSManaged public var startDate: Date?
     @NSManaged public var plays: Int16
     @NSManaged public var penalties: NSSet?
 

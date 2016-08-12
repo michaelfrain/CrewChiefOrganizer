@@ -69,9 +69,7 @@ class GameSetupViewController: UIViewController {
     
     @IBAction func unwindToGameSetupViewController(sender: UIStoryboardSegue) {
         if sender.identifier == "UnwindFromDatePickerSegue" {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.timeStyle = .short
+            let dateFormatter = StaticAssets.dateFormatter
             let formattedDate = dateFormatter.string(from: gameDate!)
             txtGameDate.text = formattedDate
         }

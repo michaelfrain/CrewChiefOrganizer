@@ -14,6 +14,8 @@
 		D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */; };
 		D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */; };
 		D3B73B021D5E5ADC0011E2F7 /* StaticAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B73B011D5E5ADC0011E2F7 /* StaticAssets.swift */; };
+		D3B73B041D5E63240011E2F7 /* SavedGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B73B031D5E63240011E2F7 /* SavedGamesViewController.swift */; };
+		D3B73B061D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B73B051D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift */; };
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
 		D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7849B1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld */; };
@@ -53,6 +55,8 @@
 		D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainEntryViewController.swift; path = Controllers/MainEntryViewController.swift; sourceTree = "<group>"; };
 		D3B73B011D5E5ADC0011E2F7 /* StaticAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticAssets.swift; path = Assets/StaticAssets.swift; sourceTree = "<group>"; };
+		D3B73B031D5E63240011E2F7 /* SavedGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedGamesViewController.swift; path = Controllers/SavedGamesViewController.swift; sourceTree = "<group>"; };
+		D3B73B051D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedGamesTableViewCell.swift; path = Views/SavedGamesTableViewCell.swift; sourceTree = "<group>"; };
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C784991D15E70C00767980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			children = (
 				D3C784D81D173D9800767980 /* SetupTextField.swift */,
 				D3C784D11D15F01300767980 /* MenuButton.swift */,
+				D3B73B051D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				D3C784D41D16EF4600767980 /* MainMenuViewController.swift */,
 				D3FDCB5E1D28617900A616D4 /* DatePickerViewController.swift */,
 				D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */,
+				D3B73B031D5E63240011E2F7 /* SavedGamesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 				D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */,
 				D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */,
 				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
+				D3B73B041D5E63240011E2F7 /* SavedGamesViewController.swift in Sources */,
+				D3B73B061D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift in Sources */,
 				D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */,
 				D3C784D91D173D9800767980 /* SetupTextField.swift in Sources */,
 				D395FCB91D581828000EB384 /* Game+CoreDataClass.swift in Sources */,

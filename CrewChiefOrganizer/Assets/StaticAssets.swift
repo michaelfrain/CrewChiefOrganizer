@@ -20,4 +20,11 @@ class StaticAssets {
     enum Result: Int16 {
         case Accepted = 0, Declined, Offset
     }
+    
+    public static let dateFormatter: DateFormatter = {
+        let singleFormatter = DateFormatter()
+        singleFormatter.dateStyle = .medium
+        singleFormatter.timeStyle = .short
+        return singleFormatter
+    }()
 }

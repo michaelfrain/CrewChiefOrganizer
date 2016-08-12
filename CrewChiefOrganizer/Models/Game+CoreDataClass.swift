@@ -18,4 +18,17 @@ public class Game: NSManagedObject {
         let newGame = NSEntityDescription.insertNewObject(forEntityName: "Game", into: moc) as! Game
         return newGame
     }
+    
+    class func readAllGamesFromMainContext() -> [Game]? {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let moc = delegate.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
+        do {
+            let games = try moc.fetch(fetchRequest)
+            return games
+        } catch {
+            // TODO: Handle failed fetch request
+        }
+        return nil
+    }
 }
