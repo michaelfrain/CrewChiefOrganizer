@@ -160,6 +160,9 @@
                             <constraint firstItem="bWz-aq-zVw" firstAttribute="centerX" secondItem="ElH-fj-BuM" secondAttribute="centerX" id="wDy-xQ-S7H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="X1W-5k-XLM" kind="show" identifier="ResumeSavedGameSegue" id="BTP-Dp-SQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI3-x0-bGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -788,4 +791,7 @@
             <point key="canvasLocation" x="698" y="-162"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BTP-Dp-SQy"/>
+    </inferredMetricsTieBreakers>
 </document>

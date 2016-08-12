@@ -22,16 +22,18 @@ class SavedGamesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ResumeSavedGameSegue" {
+            guard let index = sender as? IndexPath else {
+                // TODO: Handle this rare case
+                return
+            }
+            let destination = segue.destination as! MainEntryViewController
+            destination.currentGame = games![index.row]
+        }
     }
-    */
 
 }
 
@@ -53,5 +55,8 @@ extension SavedGamesViewController: UITableViewDataSource {
 }
 
 extension SavedGamesViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ResumeSavedGameSegue", sender: indexPath)
+    }
 }
