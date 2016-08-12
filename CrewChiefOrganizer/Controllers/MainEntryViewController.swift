@@ -44,7 +44,7 @@ class MainEntryViewController: UIViewController {
     }
     
     @IBAction func unwindToMainEntryViewController(sender: UIStoryboardSegue) {
-        
+        playCounter += 1
     }
 
 }

@@ -8,8 +8,13 @@
 
 import Foundation
 import CoreData
-
+import UIKit
 
 public class Penalty: NSManagedObject {
-
+    class func createPenaltyInMainContext() -> Penalty {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let moc = delegate.persistentContainer.viewContext
+        let newPenalty = NSEntityDescription.insertNewObject(forEntityName: "Penalty", into: moc) as! Penalty
+        return newPenalty
+    }
 }

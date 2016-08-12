@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -597,6 +597,11 @@
                         <outlet property="pkrFoul" destination="tOe-v1-kmk" id="BIr-Og-0eo"/>
                         <outlet property="pkrNumber" destination="equ-Pv-o7e" id="eLU-D6-iYJ"/>
                         <outlet property="pkrTime" destination="DQL-nV-ZAx" id="9CV-0e-JMu"/>
+                        <outlet property="segChoice" destination="PXi-Ux-ceI" id="GrD-fP-EFf"/>
+                        <outlet property="segFoulingSide" destination="GTD-SE-imq" id="bM4-pJ-T7h"/>
+                        <outlet property="segOfficial" destination="5fR-vs-Jpz" id="WKe-Im-QwR"/>
+                        <outlet property="segQuarter" destination="sgB-u0-81F" id="Ywp-nm-klQ"/>
+                        <outlet property="segTeam" destination="rDO-xQ-tb4" id="vin-0N-edN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQ8-od-pL8" userLabel="First Responder" sceneMemberID="firstResponder"/>

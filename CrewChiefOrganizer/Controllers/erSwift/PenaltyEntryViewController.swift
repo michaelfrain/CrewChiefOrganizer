@@ -12,6 +12,12 @@ class PenaltyEntryViewController: UIViewController {
     @IBOutlet var pkrTime: UIPickerView!
     @IBOutlet var pkrFoul: UIPickerView!
     @IBOutlet var pkrNumber: UIPickerView!
+    
+    @IBOutlet var segFoulingSide: UISegmentedControl!
+    @IBOutlet var segQuarter: UISegmentedControl!
+    @IBOutlet var segTeam: UISegmentedControl!
+    @IBOutlet var segChoice: UISegmentedControl!
+    @IBOutlet var segOfficial: UISegmentedControl!
     var currentGame: Game!
 
     override func viewDidLoad() {
@@ -31,7 +37,48 @@ class PenaltyEntryViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "UnwindMainEntrySegue" {
+            let penalty = Penalty.createPenaltyInMainContext()
             
+            let foulRow = pkrFoul.selectedRow(inComponent: 0)
+            penalty.foul = StaticAssets.penalties[foulRow]
+            
+            let foulingSide = StaticAssets.FoulingSide(rawValue: Int16(segFoulingSide.selectedSegmentIndex))
+            penalty.foulingSide = Int16(foulingSide!.hashValue)
+            
+            if segTeam.selectedSegmentIndex == 0 {
+                penalty.isHomeTeam = true
+            } else {
+                penalty.isHomeTeam = false
+            }
+            
+            var officials: [String] = []
+            officials.append(StaticAssets.officials[segOfficial.selectedSegmentIndex])
+            let offData = NSKeyedArchiver.archivedData(withRootObject: officials)
+            penalty.officials = offData
+            
+            penalty.playNumber = pkrNumber.selectedRow(inComponent: 0) + 1
+            
+            penalty.quarter = segQuarter.selectedSegmentIndex + 1
+            
+            let result = StaticAssets.Result(rawValue: Int16(segChoice.selectedSegmentIndex))
+            penalty.result = Int16(result!.hashValue)
+            
+            let timeArray: [Int] = [15 - pkrTime.selectedRow(inComponent: 0),pkrTime.selectedRow(inComponent: 1),pkrTime.selectedRow(inComponent: 2)]
+            let rawTime = Int16((timeArray[0] * 60) + (timeArray[1] * 10) + timeArray[2])
+            penalty.timeRemaining = rawTime
+            
+            penalty.playNumber = currentGame.plays
+            
+            penalty.game = currentGame
+            currentGame.addToPenalties(penalty)
+            
+            do {
+                let delegate = UIApplication.shared.delegate as! AppDelegate
+                let moc = delegate.persistentContainer.viewContext
+                try moc.save()
+            } catch {
+                // TODO: Handle a failed save
+            }
         }
     }
 
@@ -66,7 +113,7 @@ extension PenaltyEntryViewController: UIPickerViewDataSource {
             }
             
         case pkrFoul:
-            return 86
+            return StaticAssets.penalties.count
             
         case pkrNumber:
             return 99
@@ -91,7 +138,7 @@ extension PenaltyEntryViewController: UIPickerViewDelegate {
             }
             
         case pkrFoul:
-            return "Foul row \(row)" // TODO: Array for fouls
+            return "\(StaticAssets.penalties[row])" // TODO: Array for fouls
             
         case pkrNumber:
             return "\(row + 1)"

@@ -13,6 +13,7 @@
 		D395FCBB1D581828000EB384 /* Penalty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB71D581828000EB384 /* Penalty+CoreDataClass.swift */; };
 		D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */; };
 		D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */; };
+		D3B73B021D5E5ADC0011E2F7 /* StaticAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B73B011D5E5ADC0011E2F7 /* StaticAssets.swift */; };
 		D3C784951D15E70C00767980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C784941D15E70C00767980 /* AppDelegate.swift */; };
 		D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C784981D15E70C00767980 /* Main.storyboard */; };
 		D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7849B1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld */; };
@@ -51,6 +52,7 @@
 		D395FCB71D581828000EB384 /* Penalty+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataClass.swift"; path = "Models/Penalty+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D395FCB81D581828000EB384 /* Penalty+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Penalty+CoreDataProperties.swift"; path = "Models/Penalty+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D395FCBD1D5818D2000EB384 /* MainEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainEntryViewController.swift; path = Controllers/MainEntryViewController.swift; sourceTree = "<group>"; };
+		D3B73B011D5E5ADC0011E2F7 /* StaticAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticAssets.swift; path = Assets/StaticAssets.swift; sourceTree = "<group>"; };
 		D3C784911D15E70C00767980 /* CrewChiefOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrewChiefOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C784941D15E70C00767980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C784991D15E70C00767980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3B73B001D5E5AC00011E2F7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D3B73B011D5E5ADC0011E2F7 /* StaticAssets.swift */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		D3C784881D15E70C00767980 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		D3C784931D15E70C00767980 /* CrewChiefOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				D3B73B001D5E5AC00011E2F7 /* Assets */,
 				D3C784D31D16EF0100767980 /* Controllers */,
 				D3C784D01D15EFE700767980 /* Views */,
 				D3C784C51D15E8CC00767980 /* Models */,
@@ -320,6 +331,7 @@
 			files = (
 				D3C784D51D16EF4700767980 /* MainMenuViewController.swift in Sources */,
 				D3C7849D1D15E70C00767980 /* CrewChiefOrganizer.xcdatamodeld in Sources */,
+				D3B73B021D5E5ADC0011E2F7 /* StaticAssets.swift in Sources */,
 				D3C784D21D15F01300767980 /* MenuButton.swift in Sources */,
 				D395FCBB1D581828000EB384 /* Penalty+CoreDataClass.swift in Sources */,
 				D3FDCB5F1D28617900A616D4 /* DatePickerViewController.swift in Sources */,
