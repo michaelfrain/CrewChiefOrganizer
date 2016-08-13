@@ -63,7 +63,7 @@ class PenaltyEntryViewController: UIViewController {
             let result = StaticAssets.Result(rawValue: Int16(segChoice.selectedSegmentIndex))
             penalty.result = Int16(result!.hashValue)
             
-            let timeArray: [Int] = [15 - pkrTime.selectedRow(inComponent: 0),pkrTime.selectedRow(inComponent: 1),pkrTime.selectedRow(inComponent: 2)]
+            let timeArray: [Int] = [15 - pkrTime.selectedRow(inComponent: 0),pkrTime.selectedRow(inComponent: 2),pkrTime.selectedRow(inComponent: 3)]
             let rawTime = Int16((timeArray[0] * 60) + (timeArray[1] * 10) + timeArray[2])
             penalty.timeRemaining = rawTime
             
@@ -82,13 +82,16 @@ class PenaltyEntryViewController: UIViewController {
         }
     }
 
+    @IBAction func cancelPenaltyEntry(sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension PenaltyEntryViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         switch pickerView {
         case pkrTime:
-            return 3
+            return 4
             
         case pkrFoul, pkrNumber:
             return 1
@@ -105,8 +108,10 @@ extension PenaltyEntryViewController: UIPickerViewDataSource {
             case 0:
                 return 16
             case 1:
-                return 6
+                return 1
             case 2:
+                return 6
+            case 3:
                 return 10
             default:
                 return 0
@@ -131,7 +136,9 @@ extension PenaltyEntryViewController: UIPickerViewDelegate {
             switch component {
             case 0:
                 return "\(15 - row)"
-            case 1,2:
+            case 1:
+                return ":"
+            case 2,3:
                 return "\(row)"
             default:
                 return nil
@@ -145,6 +152,36 @@ extension PenaltyEntryViewController: UIPickerViewDelegate {
             
         default:
              return nil
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        switch pickerView {
+        case pkrTime:
+            switch component {
+            case 0:
+                return 35
+                
+            case 1:
+                return 13
+                
+            case 2,3:
+                return 22
+                
+            default:
+                return 0
+            }
+            
+        default:
+            return 100
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == pkrTime {
+            if component != 0 && row != 0 && pickerView.selectedRow(inComponent: 0) == 0 {
+                pickerView.selectRow(0, inComponent: component, animated: true)
+            }
         }
     }
 }
