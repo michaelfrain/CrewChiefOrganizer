@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import UIKit
 
-public class Penalty: NSManagedObject {
+open class Penalty: NSManagedObject {
     class func createPenaltyInMainContext() -> Penalty {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let moc = delegate.persistentContainer.viewContext

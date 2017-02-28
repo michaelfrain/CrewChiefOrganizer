@@ -11,14 +11,14 @@ import CoreData
 
 extension Penalty {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Penalty> {
-        return NSFetchRequest<Penalty>(entityName: "Penalty");
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<Penalty>(entityName: "Penalty") as! NSFetchRequest<NSFetchRequestResult>;
     }
 
     @NSManaged public var foul: String?
     @NSManaged public var foulingSide: Int16
     @NSManaged public var isHomeTeam: Bool
-    @NSManaged public var officials: NSData?
+    @NSManaged public var officials: Data?
     @NSManaged public var playerNumber: Int16
     @NSManaged public var quarter: Int16
     @NSManaged public var result: Int16

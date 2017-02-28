@@ -38,7 +38,7 @@ class GameSetupViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MainGameSegue" {
             let newGame = Game.createGameInMainContext()
             newGame.startDate = gameDate
@@ -67,7 +67,7 @@ class GameSetupViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindToGameSetupViewController(sender: UIStoryboardSegue) {
+    @IBAction func unwindToGameSetupViewController(_ sender: UIStoryboardSegue) {
         if sender.identifier == "UnwindFromDatePickerSegue" {
             let dateFormatter = StaticAssets.dateFormatter
             let formattedDate = dateFormatter.string(from: gameDate!)

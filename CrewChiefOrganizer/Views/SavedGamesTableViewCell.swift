@@ -29,7 +29,7 @@ class SavedGamesTableViewCell: UITableViewCell {
         }
     }
     
-    class func cellForTableView(tableView: UITableView, withDate: Date?, withTeams: String) -> SavedGamesTableViewCell {
+    class func cellForTableView(_ tableView: UITableView, withDate: Date?, withTeams: String) -> SavedGamesTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SavedGamesCell") as! SavedGamesTableViewCell
         cell.date = withDate
         cell.teams = withTeams

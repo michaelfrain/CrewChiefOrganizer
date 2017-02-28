@@ -24,7 +24,7 @@ class SavedGamesViewController: UIViewController {
     
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ResumeSavedGameSegue" {
             guard let index = sender as? IndexPath else {
                 // TODO: Handle this rare case
@@ -47,7 +47,7 @@ extension SavedGamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let games = games {
-            let cell = SavedGamesTableViewCell.cellForTableView(tableView: tableView, withDate: games[indexPath.row].startDate, withTeams: "\(games[indexPath.row].homeTeam!) vs. \(games[indexPath.row].awayTeam!)") // TODO: Make this type-safe, no forced unwrapping willy-nilly
+            let cell = SavedGamesTableViewCell.cellForTableView(tableView, withDate: games[indexPath.row].startDate, withTeams: "\(games[indexPath.row].homeTeam!) vs. \(games[indexPath.row].awayTeam!)") // TODO: Make this type-safe, no forced unwrapping willy-nilly
             return cell
         }
         return UITableViewCell()

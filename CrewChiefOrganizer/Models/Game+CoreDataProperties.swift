@@ -11,8 +11,8 @@ import CoreData
 
 extension Game {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Game> {
-        return NSFetchRequest<Game>(entityName: "Game");
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<Game>(entityName: "Game") as! NSFetchRequest<NSFetchRequestResult>;
     }
 
     @NSManaged public var awayScore: Int16
@@ -24,7 +24,7 @@ extension Game {
     @NSManaged public var homeScore: Int16
     @NSManaged public var homeTeam: String?
     @NSManaged public var overtimes: Int16
-    @NSManaged public var officials: NSData?
+    @NSManaged public var officials: Data?
     @NSManaged public var startDate: Date?
     @NSManaged public var plays: Int16
     @NSManaged public var penalties: NSSet?

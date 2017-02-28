@@ -28,7 +28,7 @@ class MainEntryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func incrementPlayCount(sender: UIButton) {
+    @IBAction func incrementPlayCount(_ sender: UIButton) {
         playCounter += 1
     }
     
@@ -36,7 +36,7 @@ class MainEntryViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PenaltyEntrySegue" {
             let destination = segue.destination as! PenaltyEntryViewController
             destination.currentGame = currentGame
@@ -51,7 +51,7 @@ class MainEntryViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindToMainEntryViewController(sender: UIStoryboardSegue) {
+    @IBAction func unwindToMainEntryViewController(_ sender: UIStoryboardSegue) {
         playCounter += 1
     }
 

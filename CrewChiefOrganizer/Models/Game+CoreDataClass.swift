@@ -11,7 +11,7 @@ import CoreData
 import UIKit
 
 
-public class Game: NSManagedObject {
+open class Game: NSManagedObject {
     class func createGameInMainContext() -> Game {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let moc = delegate.persistentContainer.viewContext
@@ -22,7 +22,7 @@ public class Game: NSManagedObject {
     class func readAllGamesFromMainContext() -> [Game]? {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let moc = delegate.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
+        let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest() as! NSFetchRequest<Game>
         do {
             let games = try moc.fetch(fetchRequest)
             return games

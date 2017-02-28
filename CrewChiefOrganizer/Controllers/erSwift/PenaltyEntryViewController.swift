@@ -35,7 +35,7 @@ class PenaltyEntryViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "UnwindMainEntrySegue" {
             let penalty = Penalty.createPenaltyInMainContext()
             
@@ -82,7 +82,7 @@ class PenaltyEntryViewController: UIViewController {
         }
     }
 
-    @IBAction func cancelPenaltyEntry(sender: UIButton) {
+    @IBAction func cancelPenaltyEntry(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
 }

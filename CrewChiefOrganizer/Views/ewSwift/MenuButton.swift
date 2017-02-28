@@ -33,7 +33,7 @@ import UIKit
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [Float(0), Float(1)]
+        gradientLayer.locations = [NSNumber(value: Float(0)), NSNumber(value: Float(1))]
         gradientLayer.cornerRadius = cornerRadius
         layer.insertSublayer(gradientLayer, at: 0)
     }
