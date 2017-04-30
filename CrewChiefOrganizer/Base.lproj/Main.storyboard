@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KFX-M0-vfi">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,27 +23,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCAA Football Crew Chief Organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-kK-OGg">
+                                <rect key="frame" x="244" y="20" width="280" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-iU-e1r" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="304" y="82.5" width="160" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="1OJ-qV-eos"/>
+                                    <constraint firstAttribute="height" constant="40" id="1OJ-qV-eos"/>
                                     <constraint firstAttribute="width" constant="160" id="7Hi-1C-AQK"/>
                                 </constraints>
                                 <state key="normal" title="Create New Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.45882352939999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -48,22 +53,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7n-Nh-k1O" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="304" y="173" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="HgO-6z-5oO"/>
-                                    <constraint firstAttribute="height" constant="160" id="xXH-hf-o6F"/>
+                                    <constraint firstAttribute="height" constant="40" id="xXH-hf-o6F"/>
                                 </constraints>
                                 <state key="normal" title="Load Saved Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -99,16 +105,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6A-Yp-zf2">
+                                <rect key="frame" x="0.0" y="140.5" width="768" height="883.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SavedGamesCell" id="KMT-0X-g2h" customClass="SavedGamesTableViewCell" customModule="CrewChiefOrganizer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KMT-0X-g2h" id="uyY-TP-CaE">
-                                            <frame key="frameInset" width="768" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Team v. Away Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yr-MN-2nL">
+                                                    <rect key="frame" x="8" y="11.5" width="199" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="vue-Ze-D0N"/>
                                                     </constraints>
@@ -117,6 +125,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTw-S7-zWy">
+                                                    <rect key="frame" x="654" y="11.5" width="106" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="bSE-jH-Us4"/>
                                                     </constraints>
@@ -145,6 +154,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWz-aq-zVw">
+                                <rect key="frame" x="331.5" y="28" width="105" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -181,6 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="wfN-RB-93h">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="9uF-Vu-mAO"/>
                                 </constraints>
@@ -188,7 +199,7 @@
                                     <navigationItem title="Game Date" id="0hc-J7-P4n">
                                         <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="n0g-3n-WXy">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rNL-lo-n0g">
-                                                <rect key="frame" x="909" y="963" width="75" height="30"/>
+                                                <rect key="frame" x="209" y="27" width="75" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Done">
@@ -203,6 +214,7 @@
                                 </items>
                             </navigationBar>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jgm-k5-xLQ">
+                                <rect key="frame" x="0.0" y="64" width="300" height="236"/>
                                 <date key="date" timeIntervalSinceReferenceDate="488067940.43607903">
                                     <!--2016-06-19 22:25:40 +0000-->
                                 </date>
@@ -243,11 +255,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Game Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz2-rQ-6mb">
+                                <rect key="frame" x="317.5" y="20" width="133.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Game Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wva-UX-jN6" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="248" y="55.5" width="272" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="iUU-rJ-z24">
                                         <variation key="heightClass=compact-widthClass=compact" constant="30"/>
@@ -272,6 +286,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Home Team" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-y1-hyh" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="117.5" width="358" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m8V-OF-srm">
                                         <variation key="heightClass=compact-widthClass=compact" constant="30"/>
@@ -295,8 +310,10 @@
                                 </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vAz-oL-HR9">
+                                <rect key="frame" x="20" y="206.5" width="358" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Referee" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1K-HS-jWu" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -315,6 +332,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Umpire" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-OK-Ig7" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -333,6 +351,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Head Linesman" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sl5-9V-Emk" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -351,6 +370,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Line Judge" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXS-80-dhU" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="156" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -376,8 +396,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z4X-AM-2hs">
+                                <rect key="frame" x="390" y="206.5" width="358" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Field Judge" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uV3-TR-yxC" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -396,6 +418,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Side Judge" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80u-mw-DaQ" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -414,6 +437,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Back Judge" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z3Z-Oe-WWw" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -432,6 +456,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Center Judge" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZF-gM-NAN" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="156" width="358" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -452,6 +477,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Visiting Team" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Izf-s4-lb1" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="390" y="117.5" width="358" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="O49-oK-qBV">
                                         <variation key="heightClass=compact-widthClass=compact" constant="30"/>
@@ -475,6 +501,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlx-vT-FgE">
+                                <rect key="frame" x="0.0" y="964" width="768" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="wvn-v1-KUK"/>
@@ -550,6 +577,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-u0-81F">
+                                <rect key="frame" x="557" y="45.5" width="191" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="191" id="kKq-On-zds"/>
                                 </constraints>
@@ -562,27 +590,32 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quarter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAO-2q-8Jw">
+                                <rect key="frame" x="20" y="49.5" width="59" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-9R-KTR">
+                                <rect key="frame" x="20" y="150" width="38" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65U-c2-RsW">
+                                <rect key="frame" x="20" y="250.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-xQ-tb4">
+                                <rect key="frame" x="557" y="246.5" width="191" height="29"/>
                                 <segments>
                                     <segment title="Home"/>
                                     <segment title="Visitor"/>
                                 </segments>
                             </segmentedControl>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-v1-kmk">
+                                <rect key="frame" x="623" y="303.5" width="125" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="73c-Gd-lWy"/>
                                     <constraint firstAttribute="height" constant="116" id="Sql-1g-HeQ"/>
@@ -593,16 +626,19 @@
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phn-GQ-Cec">
+                                <rect key="frame" x="20" y="351" width="32.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side of ball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvq-63-Qgh">
+                                <rect key="frame" x="20" y="441.5" width="85" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GTD-SE-imq">
+                                <rect key="frame" x="557" y="437.5" width="191" height="29"/>
                                 <segments>
                                     <segment title="Off"/>
                                     <segment title="Def"/>
@@ -611,16 +647,19 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-X7-MzL">
+                                <rect key="frame" x="20" y="532" width="110.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penalty result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-tn-viK">
+                                <rect key="frame" x="20" y="622.5" width="104" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-Ux-ceI">
+                                <rect key="frame" x="557" y="618.5" width="191" height="29"/>
                                 <segments>
                                     <segment title="Accept"/>
                                     <segment title="Decline"/>
@@ -628,11 +667,13 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling official" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn8-nF-Ine">
+                                <rect key="frame" x="20" y="713" width="107.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5fR-vs-Jpz">
+                                <rect key="frame" x="557" y="709" width="191" height="29"/>
                                 <segments>
                                     <segment title="R"/>
                                     <segment title="U"/>
@@ -644,6 +685,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLh-yI-KrF">
+                                <rect key="frame" x="384" y="964" width="384" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8DH-KJ-OYu"/>
@@ -656,6 +698,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="equ-Pv-o7e">
+                                <rect key="frame" x="623" y="484.5" width="125" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="aFm-Kt-1kw"/>
                                     <constraint firstAttribute="height" constant="116" id="hWm-Ca-jae"/>
@@ -665,22 +708,14 @@
                                     <outlet property="delegate" destination="qxs-RT-F9K" id="cpp-cL-ODT"/>
                                 </connections>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQL-nV-ZAx">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="116" id="VSj-bi-rRO"/>
-                                    <constraint firstAttribute="width" constant="125" id="b7E-3s-Zw0"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="qxs-RT-F9K" id="ijf-JR-lLF"/>
-                                    <outlet property="delegate" destination="qxs-RT-F9K" id="gqw-C5-kYt"/>
-                                </connections>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a New Foul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpl-3x-Srx">
+                                <rect key="frame" x="319.5" y="20" width="129.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0P-Gz-AiV">
+                                <rect key="frame" x="0.0" y="964" width="384" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="72e-5p-eey"/>
@@ -692,6 +727,86 @@
                                     <action selector="cancelPenaltyEntryWithSender:" destination="qxs-RT-F9K" eventType="touchUpInside" id="EHm-x3-Uaq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbD-q5-aSF" customClass="KeypadEntry" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="585" y="96" width="163" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="KqB-uV-yyR"/>
+                                    <constraint firstAttribute="height" constant="128" id="Wnh-EQ-psc"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfY-qy-KEg" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="392" y="142" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.45882352939999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mjw-ig-RxG" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="442" y="142" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.45882352939999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQZ-Ia-eof" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="484" y="142" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.45882352939999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-Zd-H8j" customClass="SetupTextField" customModule="CrewChiefOrganizer" customModuleProvider="target">
+                                <rect key="frame" x="350" y="142" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.45882352939999999" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -703,6 +818,7 @@
                             <constraint firstItem="qpl-3x-Srx" firstAttribute="top" secondItem="6Rm-3S-h9A" secondAttribute="bottom" id="80R-GP-fQ2"/>
                             <constraint firstItem="B0P-Gz-AiV" firstAttribute="leading" secondItem="phB-dl-3b6" secondAttribute="leadingMargin" constant="-20" id="AQS-Mu-z45"/>
                             <constraint firstItem="B0P-Gz-AiV" firstAttribute="width" secondItem="fLh-yI-KrF" secondAttribute="width" id="EO0-b8-QUi"/>
+                            <constraint firstItem="zbD-q5-aSF" firstAttribute="trailing" secondItem="rDO-xQ-tb4" secondAttribute="trailing" id="G0T-3d-z1c"/>
                             <constraint firstAttribute="leadingMargin" secondItem="NAO-2q-8Jw" secondAttribute="leading" id="HOt-lU-jJ1"/>
                             <constraint firstItem="GTD-SE-imq" firstAttribute="centerY" secondItem="Xvq-63-Qgh" secondAttribute="centerY" id="ITB-CG-vTl"/>
                             <constraint firstItem="GTD-SE-imq" firstAttribute="trailing" secondItem="tOe-v1-kmk" secondAttribute="trailing" id="Ile-vU-Fon"/>
@@ -710,25 +826,24 @@
                             <constraint firstItem="sgB-u0-81F" firstAttribute="centerY" secondItem="NAO-2q-8Jw" secondAttribute="centerY" id="JGD-Va-DgH"/>
                             <constraint firstItem="PXi-Ux-ceI" firstAttribute="width" secondItem="5fR-vs-Jpz" secondAttribute="width" id="Jj7-4I-mv7"/>
                             <constraint firstItem="equ-Pv-o7e" firstAttribute="centerY" secondItem="uda-X7-MzL" secondAttribute="centerY" id="Jk5-zR-oHR"/>
-                            <constraint firstItem="DQL-nV-ZAx" firstAttribute="trailing" secondItem="sgB-u0-81F" secondAttribute="trailing" id="NNK-bX-ixi"/>
                             <constraint firstItem="tOe-v1-kmk" firstAttribute="centerY" secondItem="phn-GQ-Cec" secondAttribute="centerY" id="NzA-E3-QrN"/>
                             <constraint firstItem="rDO-xQ-tb4" firstAttribute="width" secondItem="GTD-SE-imq" secondAttribute="width" id="O8z-mR-QF4"/>
-                            <constraint firstItem="rDO-xQ-tb4" firstAttribute="trailing" secondItem="DQL-nV-ZAx" secondAttribute="trailing" id="ULU-Wf-vc1"/>
                             <constraint firstItem="tOe-v1-kmk" firstAttribute="trailing" secondItem="rDO-xQ-tb4" secondAttribute="trailing" id="Uvp-Kb-3Bc"/>
                             <constraint firstItem="PXi-Ux-ceI" firstAttribute="centerY" secondItem="iTH-tn-viK" secondAttribute="centerY" id="VhD-v5-eb4"/>
-                            <constraint firstItem="phn-GQ-Cec" firstAttribute="top" secondItem="65U-c2-RsW" secondAttribute="bottom" constant="70" id="Z9l-Wm-fUE"/>
-                            <constraint firstItem="DQL-nV-ZAx" firstAttribute="centerY" secondItem="Twh-9R-KTR" secondAttribute="centerY" id="b0a-Oe-rgK"/>
+                            <constraint firstItem="phn-GQ-Cec" firstAttribute="top" secondItem="65U-c2-RsW" secondAttribute="bottom" constant="80" id="Z9l-Wm-fUE"/>
                             <constraint firstItem="tn8-nF-Ine" firstAttribute="top" secondItem="iTH-tn-viK" secondAttribute="bottom" constant="70" id="be4-3q-Bij"/>
                             <constraint firstItem="iTH-tn-viK" firstAttribute="leading" secondItem="uda-X7-MzL" secondAttribute="leading" id="dz9-7K-6nV"/>
+                            <constraint firstItem="zbD-q5-aSF" firstAttribute="trailing" secondItem="sgB-u0-81F" secondAttribute="trailing" id="g9h-2X-70Y"/>
                             <constraint firstItem="fLh-yI-KrF" firstAttribute="leading" secondItem="B0P-Gz-AiV" secondAttribute="trailing" id="hJ1-tQ-cdA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sgB-u0-81F" secondAttribute="trailing" id="i5k-Qg-f2c"/>
                             <constraint firstItem="Xvq-63-Qgh" firstAttribute="top" secondItem="phn-GQ-Cec" secondAttribute="bottom" constant="70" id="iOx-II-CyS"/>
                             <constraint firstItem="5fR-vs-Jpz" firstAttribute="trailing" secondItem="PXi-Ux-ceI" secondAttribute="trailing" id="jZG-ad-2c8"/>
                             <constraint firstItem="5fR-vs-Jpz" firstAttribute="centerY" secondItem="tn8-nF-Ine" secondAttribute="centerY" id="jvw-Vu-5tu"/>
-                            <constraint firstItem="Twh-9R-KTR" firstAttribute="top" secondItem="NAO-2q-8Jw" secondAttribute="bottom" constant="70" id="nb5-ci-bRP"/>
+                            <constraint firstItem="Twh-9R-KTR" firstAttribute="top" secondItem="NAO-2q-8Jw" secondAttribute="bottom" constant="80" id="nb5-ci-bRP"/>
                             <constraint firstItem="rDO-xQ-tb4" firstAttribute="centerY" secondItem="65U-c2-RsW" secondAttribute="centerY" id="o8f-oM-5nX"/>
                             <constraint firstItem="uda-X7-MzL" firstAttribute="leading" secondItem="Xvq-63-Qgh" secondAttribute="leading" id="p37-BL-ifM"/>
                             <constraint firstItem="PXi-Ux-ceI" firstAttribute="trailing" secondItem="equ-Pv-o7e" secondAttribute="trailing" id="pWL-C3-mG7"/>
+                            <constraint firstItem="zbD-q5-aSF" firstAttribute="centerY" secondItem="Twh-9R-KTR" secondAttribute="centerY" id="qFf-Pi-aUK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fLh-yI-KrF" secondAttribute="trailing" constant="-20" id="qRh-vc-z6t"/>
                             <constraint firstItem="65U-c2-RsW" firstAttribute="leading" secondItem="Twh-9R-KTR" secondAttribute="leading" id="tEq-hH-Lc0"/>
                             <constraint firstItem="kfZ-QI-vs6" firstAttribute="top" secondItem="B0P-Gz-AiV" secondAttribute="bottom" id="tTc-HW-b7o"/>
@@ -737,19 +852,23 @@
                             <constraint firstItem="qpl-3x-Srx" firstAttribute="centerX" secondItem="phB-dl-3b6" secondAttribute="centerX" id="ugz-jN-Ih4"/>
                             <constraint firstItem="kfZ-QI-vs6" firstAttribute="top" secondItem="fLh-yI-KrF" secondAttribute="bottom" id="vsG-Xx-9C2"/>
                             <constraint firstItem="GTD-SE-imq" firstAttribute="width" secondItem="PXi-Ux-ceI" secondAttribute="width" id="wK0-kg-f0k"/>
-                            <constraint firstItem="65U-c2-RsW" firstAttribute="top" secondItem="Twh-9R-KTR" secondAttribute="bottom" constant="70" id="xLo-OJ-7Ld"/>
+                            <constraint firstItem="65U-c2-RsW" firstAttribute="top" secondItem="Twh-9R-KTR" secondAttribute="bottom" constant="80" id="xLo-OJ-7Ld"/>
                             <constraint firstItem="equ-Pv-o7e" firstAttribute="trailing" secondItem="GTD-SE-imq" secondAttribute="trailing" id="zAT-fJ-zpA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="keypadTime" destination="zbD-q5-aSF" id="yVp-lo-bRx"/>
                         <outlet property="pkrFoul" destination="tOe-v1-kmk" id="BIr-Og-0eo"/>
                         <outlet property="pkrNumber" destination="equ-Pv-o7e" id="eLU-D6-iYJ"/>
-                        <outlet property="pkrTime" destination="DQL-nV-ZAx" id="9CV-0e-JMu"/>
                         <outlet property="segChoice" destination="PXi-Ux-ceI" id="GrD-fP-EFf"/>
                         <outlet property="segFoulingSide" destination="GTD-SE-imq" id="bM4-pJ-T7h"/>
                         <outlet property="segOfficial" destination="5fR-vs-Jpz" id="WKe-Im-QwR"/>
                         <outlet property="segQuarter" destination="sgB-u0-81F" id="Ywp-nm-klQ"/>
                         <outlet property="segTeam" destination="rDO-xQ-tb4" id="vin-0N-edN"/>
+                        <outlet property="txtTimeFirstDigit" destination="b3j-Zd-H8j" id="78P-Ae-46t"/>
+                        <outlet property="txtTimeFourthDigit" destination="EQZ-Ia-eof" id="4vv-ge-97t"/>
+                        <outlet property="txtTimeSecondDigit" destination="hfY-qy-KEg" id="sbg-cQ-zsP"/>
+                        <outlet property="txtTimeThirdDigit" destination="Mjw-ig-RxG" id="2ZQ-TE-mFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQ8-od-pL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -770,74 +889,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMB-5o-XyR" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
-                                <frame key="frameInset" minX="155" minY="342" width="150" height="150"/>
+                                <rect key="frame" x="155" y="342" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Increment Play Count">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="incrementPlayCountWithSender:" destination="X1W-5k-XLM" eventType="touchUpInside" id="dIQ-a4-v3o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pp-oo-enz" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
-                                <frame key="frameInset" minX="429" minY="342" width="150" height="150"/>
+                                <rect key="frame" x="429" y="342" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Enter New Foul">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="qxs-RT-F9K" kind="show" identifier="PenaltyEntrySegue" id="AGJ-ZR-rct"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Play Count: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-PJ-ca9">
-                                <frame key="frameInset" minX="291" minY="228" width="186" height="21"/>
+                                <rect key="frame" x="291" y="228" width="186" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-Zn-22w" customClass="MenuButton" customModule="CrewChiefOrganizer" customModuleProvider="target">
-                                <frame key="frameInset" minX="285" minY="529" width="150" height="150"/>
+                                <rect key="frame" x="285" y="529" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Exit Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="X3t-3c-lmk" kind="unwind" identifier="ExitAndSaveSegue" unwindAction="unwindToMainMenuWithSender:" id="1zf-vI-AgV"/>
                                 </connections>

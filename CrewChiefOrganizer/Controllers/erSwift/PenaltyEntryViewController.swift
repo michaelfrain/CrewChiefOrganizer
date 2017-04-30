@@ -9,7 +9,7 @@
 import UIKit
 
 class PenaltyEntryViewController: UIViewController {
-    @IBOutlet var pkrTime: UIPickerView!
+    @IBOutlet var keypadTime: UIView!
     @IBOutlet var pkrFoul: UIPickerView!
     @IBOutlet var pkrNumber: UIPickerView!
     
@@ -18,17 +18,25 @@ class PenaltyEntryViewController: UIViewController {
     @IBOutlet var segTeam: UISegmentedControl!
     @IBOutlet var segChoice: UISegmentedControl!
     @IBOutlet var segOfficial: UISegmentedControl!
+    
+    @IBOutlet var txtTimeFirstDigit: UITextField!
+    @IBOutlet var txtTimeSecondDigit: UITextField!
+    @IBOutlet var txtTimeThirdDigit: UITextField!
+    @IBOutlet var txtTimeFourthDigit: UITextField!
     var currentGame: Game!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let keypadEntryNib = Bundle.main.loadNibNamed("KeypadEntry", owner: self, options: nil)?.first as! KeypadEntry
+        keypadTime.addSubview(keypadEntryNib)
+        
+        let top = NSLayoutConstraint(item: keypadTime, attribute: .top, relatedBy: .equal, toItem: keypadEntryNib, attribute: .top, multiplier: 1.0, constant: 0)
+        let bottom = NSLayoutConstraint(item: keypadTime, attribute: .bottom, relatedBy: .equal, toItem: keypadEntryNib, attribute: .bottom, multiplier: 1.0, constant: 0.0)
+        let leading = NSLayoutConstraint(item: keypadTime, attribute: .leading, relatedBy: .equal, toItem: keypadEntryNib, attribute: .leading, multiplier: 1.0, constant: 0.0)
+        let trailing = NSLayoutConstraint(item: keypadTime, attribute: .trailing, relatedBy: .equal, toItem: keypadEntryNib, attribute: .trailing, multiplier: 1.0, constant: 0.0)
+        keypadEntryNib.translatesAutoresizingMaskIntoConstraints = false
+        view.addConstraints([top, bottom, leading, trailing])
+        keypadEntryNib.delegate = self
     }
     
 
@@ -63,10 +71,6 @@ class PenaltyEntryViewController: UIViewController {
             let result = StaticAssets.Result(rawValue: Int16(segChoice.selectedSegmentIndex))
             penalty.result = Int16(result!.hashValue)
             
-            let timeArray: [Int] = [15 - pkrTime.selectedRow(inComponent: 0),pkrTime.selectedRow(inComponent: 2),pkrTime.selectedRow(inComponent: 3)]
-            let rawTime = Int16((timeArray[0] * 60) + (timeArray[1] * 10) + timeArray[2])
-            penalty.timeRemaining = rawTime
-            
             penalty.playNumber = currentGame.plays
             
             penalty.game = currentGame
@@ -90,9 +94,6 @@ class PenaltyEntryViewController: UIViewController {
 extension PenaltyEntryViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         switch pickerView {
-        case pkrTime:
-            return 4
-            
         case pkrFoul, pkrNumber:
             return 1
             
@@ -103,20 +104,6 @@ extension PenaltyEntryViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView {
-        case pkrTime:
-            switch component {
-            case 0:
-                return 16
-            case 1:
-                return 1
-            case 2:
-                return 6
-            case 3:
-                return 10
-            default:
-                return 0
-            }
-            
         case pkrFoul:
             return StaticAssets.penalties.count
             
@@ -132,18 +119,6 @@ extension PenaltyEntryViewController: UIPickerViewDataSource {
 extension PenaltyEntryViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView {
-        case pkrTime:
-            switch component {
-            case 0:
-                return "\(15 - row)"
-            case 1:
-                return ":"
-            case 2,3:
-                return "\(row)"
-            default:
-                return nil
-            }
-            
         case pkrFoul:
             return "\(StaticAssets.penalties[row])" // TODO: Array for fouls
             
@@ -157,31 +132,49 @@ extension PenaltyEntryViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         switch pickerView {
-        case pkrTime:
-            switch component {
-            case 0:
-                return 35
-                
-            case 1:
-                return 13
-                
-            case 2,3:
-                return 22
-                
-            default:
-                return 0
-            }
-            
         default:
             return 100
         }
     }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == pkrTime {
-            if component != 0 && row != 0 && pickerView.selectedRow(inComponent: 0) == 0 {
-                pickerView.selectRow(0, inComponent: component, animated: true)
+}
+
+extension PenaltyEntryViewController: KeypadEntryDelegate {
+    func didInputToKeypad(keypadEntry: KeypadEntry, input: Int) {
+        if keypadEntry == keypadTime.subviews[0] as! KeypadEntry {
+            if txtTimeFirstDigit.text == "" {
+                if input == 0 || input == 1 {
+                    txtTimeFirstDigit.text = "\(input)"
+                } else {
+                    txtTimeFirstDigit.text = "\(0)"
+                    txtTimeSecondDigit.text = "\(input)"
+                }
+            } else if txtTimeSecondDigit.text == "" {
+                if txtTimeFirstDigit.text == "0" {
+                    txtTimeSecondDigit.text = "\(input)"
+                } else {
+                    if input <= 5 {
+                        txtTimeSecondDigit.text = "\(input)"
+                    }
+                }
+            } else if txtTimeThirdDigit.text == "" {
+                if input <= 5 {
+                    txtTimeThirdDigit.text = "\(input)"
+                }
+            } else if txtTimeFourthDigit.text == "" {
+                txtTimeFourthDigit.text = "\(input)"
             }
+        }
+    }
+    
+    func didDeleteLastNumber(keypadEntry: KeypadEntry) {
+        if txtTimeFourthDigit.text != "" {
+            txtTimeFourthDigit.text = ""
+        } else if txtTimeThirdDigit.text != "" {
+            txtTimeThirdDigit.text = ""
+        } else if txtTimeSecondDigit.text != "" {
+            txtTimeSecondDigit.text = ""
+        } else if txtTimeFirstDigit.text != "" {
+            txtTimeFirstDigit.text = ""
         }
     }
 }

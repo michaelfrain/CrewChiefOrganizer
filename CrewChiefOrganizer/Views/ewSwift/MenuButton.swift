@@ -9,14 +9,14 @@
 import UIKit
 
 @IBDesignable class MenuButton: UIButton {
-    @IBInspectable var topColor: UIColor! {
+    @IBInspectable var borderColor: UIColor! {
         didSet {
-            layoutIfNeeded()
+            layer.borderColor = borderColor.cgColor
         }
     }
-    @IBInspectable var bottomColor: UIColor! {
+    @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
-            layoutIfNeeded()
+            layer.borderWidth = borderWidth
         }
     }
     @IBInspectable var cornerRadius: CGFloat = 0 {
@@ -24,17 +24,5 @@ import UIKit
             layer.cornerRadius = cornerRadius
             layer.masksToBounds = cornerRadius > 0
         }
-    }
-
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [NSNumber(value: Float(0)), NSNumber(value: Float(1))]
-        gradientLayer.cornerRadius = cornerRadius
-        layer.insertSublayer(gradientLayer, at: 0)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D311B2511EB55E670056F303 /* KeypadEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = D311B2501EB55E670056F303 /* KeypadEntry.xib */; };
+		D311B2531EB562B40056F303 /* KeypadEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311B2521EB562B40056F303 /* KeypadEntry.swift */; };
 		D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */; };
 		D395FCB91D581828000EB384 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB51D581828000EB384 /* Game+CoreDataClass.swift */; };
 		D395FCBA1D581828000EB384 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395FCB61D581828000EB384 /* Game+CoreDataProperties.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D311B2501EB55E670056F303 /* KeypadEntry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeypadEntry.xib; path = Bundle/KeypadEntry.xib; sourceTree = "<group>"; };
+		D311B2521EB562B40056F303 /* KeypadEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeypadEntry.swift; path = Views/KeypadEntry.swift; sourceTree = "<group>"; };
 		D385348E1D29C42F00067BFD /* PenaltyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PenaltyEntryViewController.swift; path = Controllers/erSwift/PenaltyEntryViewController.swift; sourceTree = "<group>"; };
 		D395FCB51D581828000EB384 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "Models/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D395FCB61D581828000EB384 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "Models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D311B24F1EB55E370056F303 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				D311B2501EB55E670056F303 /* KeypadEntry.xib */,
+			);
+			name = Bundle;
+			sourceTree = "<group>";
+		};
 		D3B73B001D5E5AC00011E2F7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		D3C784931D15E70C00767980 /* CrewChiefOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				D311B24F1EB55E370056F303 /* Bundle */,
 				D3B73B001D5E5AC00011E2F7 /* Assets */,
 				D3C784D31D16EF0100767980 /* Controllers */,
 				D3C784D01D15EFE700767980 /* Views */,
@@ -182,6 +195,7 @@
 				D3C784D81D173D9800767980 /* SetupTextField.swift */,
 				D3C784D11D15F01300767980 /* MenuButton.swift */,
 				D3B73B051D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift */,
+				D311B2521EB562B40056F303 /* KeypadEntry.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -311,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D311B2511EB55E670056F303 /* KeypadEntry.xib in Resources */,
 				D3C784A21D15E70C00767980 /* LaunchScreen.storyboard in Resources */,
 				D3C7849F1D15E70C00767980 /* Assets.xcassets in Resources */,
 				D3C7849A1D15E70C00767980 /* Main.storyboard in Resources */,
@@ -347,6 +362,7 @@
 				D3C784D71D173A2E00767980 /* GameSetupViewController.swift in Sources */,
 				D395FCBE1D5818D2000EB384 /* MainEntryViewController.swift in Sources */,
 				D395FCBC1D581828000EB384 /* Penalty+CoreDataProperties.swift in Sources */,
+				D311B2531EB562B40056F303 /* KeypadEntry.swift in Sources */,
 				D385348F1D29C42F00067BFD /* PenaltyEntryViewController.swift in Sources */,
 				D3B73B041D5E63240011E2F7 /* SavedGamesViewController.swift in Sources */,
 				D3B73B061D5E78BD0011E2F7 /* SavedGamesTableViewCell.swift in Sources */,
